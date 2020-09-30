@@ -1,0 +1,21 @@
+#JavaScript
+#amCharts
+--------------
+*local environment 
+in console run =>   nodemon index.js 
+then go for localhost:8080
+server will be restarting automatically with every changes happening in the files [index.html, style.css, script.js].
+
+*[index.js] server file based express server.
+----------------------------
+
+#dependencies
+npm install node ......./\
+npm install express ........../\
+npm install nodemon ........../\
+
+
+#dependencies
+npm install node ......./\
+npm install express ........../\
+npm install nodemon ........../\

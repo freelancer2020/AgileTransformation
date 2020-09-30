@@ -1,0 +1,22 @@
+{
+  "name": "new_task_vaniila_maps",
+  "version": "1.0.0",
+  "description": "map task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amcharts",
+    "javascript",
+    "svg",
+    "datavz"
+  ],
+  "author": "mostafa",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^14.8.0",
+    "nodemon": "^2.0.4"
+  }
+}

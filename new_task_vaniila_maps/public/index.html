@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who is the Champion?</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'style/style.css'>
+        <script defer type = 'module' src = 'src/script.js'></script>
+        <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="//cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id = 'con'></div>
+
+        <div id = 'wall'>
+
+            <div id = 'header'>
+                <p class = 'font-header'>Champion</p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <!-- <span>BY <a href = '#'>RUSSELL GODLDENBERG</a></span> -->
+                <p id = 'intro'>
+                    Accenture creates huge amount of Content.But which countries are Champion in Content Creation?
+                </p>
+                <div id = 'arrow-container'>
+                    <div id = 'arrow-down'></div>
+                </div>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_1'>
+                Japan Ranks No 1 in Content Creation, with total count of 4504 across various contribution types.
+                </p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_2'>
+                   United States of America Ranks No 2  in Content Creation, with total count of 1700 across various contribution types.
+                </p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_3'>
+                    United Kingdom Ranks No 3  in Content Creation, with total count of 838 across various contribution types.
+                </p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_4'>
+                Australia Ranks no 4  in Content Creation, with total count of 441 across various contribution types.
+                </p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_5'>
+                    Germany Ranks no 5  in Content Creation, with total count of 343 across various contribution types.
+                </p>
+            </div>
+
+            <div class = 'wall-topics'>
+                <p class = 'section section_6'>
+                  Top 20 Content Contributing Countries...Here we go!
+                </p>
+            </div>
+
+            <div class = 'wall-topics part-2'>
+
+                
+                    <div id = 'data-control'>
+                        <div id = 'encapsulate'>
+                            <p class = 'topic-part-2'>Top 20 Countries with the last</p>
+                        <select class = 'selc sel-1'>
+                            <option class = 'opt opt-1' value = '1'>1</option>
+                            <option class = 'opt opt-1' value = '2'>2</option>
+                            <option class = 'opt opt-1' value = '3'>3</option>
+                            <option class = 'opt opt-1' value = '3'>4</option>
+                            <option class = 'opt opt-1' value = '5'>5</option>
+                        </select>
+                        <p class = 'topic-part-2'>years. Based of </p>
+                       
+                       
+                        <select class = 'selc selc-3'>
+                          <!--   <option class = 'opt opt-3' value = 'light'>Light</option>
+                            <option class = 'opt opt-3' value = 'medium'>medium</option>
+                            <option class = 'opt opt-3' value = 'heavey'>heavey</option>
+                            <option class = 'opt opt-3' value = 'all'>all</option> -->
+                        </select>
+                        <p class = 'topic-part-2'>contribution types.</p>
+                        </div>
+                    </div>
+                    <!-- Part 2 scroll & select-->
+                <!--     <div id = 'scroll-control-container'>
+                     <!--    <div id = 'scroll-title'>
+                            <span class = 'sc-title'>Average rating</span>
+                            <span class = 'sc-title'>Number of breweries</span>
+                        </div> -->
+<!-- 
+                        <div id = 'scroll-track-container'>
+                            <input type = 'range' value = '20' id = 'scrolling'>
+                            <div id = 'termo'>
+                                <span id= 'termo-left'></span>
+                                <span id= 'termo-right'></span>
+                            </div>
+                        </div> -->
+
+                        <div id = 'countries-list-container'>
+                            <div id = 'list-countries'>
+                                <b id = 'list-top'> Top Countries </b>
+                                <div class = 'country-obj'>
+                                    <span class = 'country' title = 'USA first country'>01. USA</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>02. UK</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>03. Australia</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>04. Japan</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>05. Germany</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>06. Italy</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>07. Spain</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>08. Canada</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>09. France</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>10. India</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>11. Brazil</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>12. Singapore</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>13. China/Mainland</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>14. Netherland</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>15. Switzerland</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>16. Ireland</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>17. Argentina</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>18. Africa</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>19. Belgium"</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                <div class = 'country-obj'>
+                                    <span class = 'country'>20. Norway</span>
+                                    <div class = 'country-info'></div>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                 -->
+
+                
+
+            </div> <!--End of topics wall-->
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

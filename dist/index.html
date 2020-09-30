@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tech Multilpier</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = 'stylesheet' type = 'text/css' href = 'styles/style.css'>
+        <link rel="shortcut icon" href="./assets/images/TM.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        <script defer type = 'text/javascript' src = 'bundle.js'></script>
+        <script src="https://d3js.org/d3.v5.js"></script> <!--D3.js-->
+        <!-- <script defer type = 'text/javascript' src="../src/scripts/index.js"></script> -->
+        <script src="https://kit.fontawesome.com/7d2d0643b6.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <div class = 'box-graph'></div>
+      <!--
+        <header>
+            <div id = 'intro'>
+                <a id = 'puu' href = '#'>ThePudding</a>
+            </div>
+        </header>
+      -->
+      <!--chatbot-->
+      <div id = 'chatbot'>
+        <!--div id = 'message'></div>-->
+        <svg width = '250' height = '200' version = '1.1'>
+          <text id = 'message' x = '40' y = '100'></text>
+          <path d="M 125, 25 C 250 25, 250 175 125 175" stroke="black" stroke-width = '2'fill="transparent"/>
+          <path d="M 125, 25 C 0 25, 0 175 100 175" stroke="black" stroke-width = '2' fill="transparent"/>
+          <path d = 'M 100 175 L 112 200 125 175' fill = 'transparent' stroke-width = '2' stroke = '#2b2b2b'/>
+        </svg>
+        <div id = 'bot'>
+          <img id = 'image-bot' src = './assets/images/chatbot.svg'>
+        </div>
+      </div>
+
+        <article>
+            <div id = 'head-article'>
+                We will help you identify difference between where you really are on your transformational journey
+            </div>
+            <div id = 'q-head'>
+               We captured data from hundreds of companies in your industry as well as used in real data from your own system to show you where you stand on the Enterprise Transformation Journey
+            </div>
+            <span id = 'author'><b>By </b><a href = '#' class="authors">Eddie Murphy</a> & <a href = '#' class="authors">Victoria Beckham</a></span>
+            <div id = 'sub'>
+              Tech Multilpier asset is a consolidated assessment tool evaluating how well technology and IT capablities enable the business and "multiplies" values
+              <br><br>
+              The assets seek to identify the most important KPI's for an organization around the four "New IT" areas : Purpose , Future Model, Foundation , Innovation
+              <br><br>
+              The assets includes inputs from multiple internal assests and client work
+            </div>
+        </article>
+
+
+        
+          
+          <section class = 'sec sec_1'>
+          
+            <div class = 'box-chart'>
+              <my-scroll header = 'IT Positioning'></my-scroll>
+              <my-scroll header = 'Business/Digital/IT'></my-scroll>
+              <my-scroll header = 'Investment'></my-scroll>
+              <my-scroll header = 'Speed'></my-scroll>
+              <my-scroll header = 'Sourcing'></my-scroll>
+              <my-scroll header = 'Architecture'></my-scroll>
+              <my-scroll header = 'Legacy Dependency'></my-scroll>
+              <my-scroll header = 'Cloud Platforms'></my-scroll>
+              <my-scroll header = 'New Business Models'></my-scroll>
+            </div>
+  
+            <div class = 'box-chart-2'>
+              <my-chart header = 'IT Positioning'></my-chart>
+              <my-chart header = 'Business/Digital/IT'></my-chart>
+              <my-chart header = 'Investment'></my-chart>
+              <my-chart header = 'Speed'></my-chart>
+              <my-chart header = 'Sourcing'></my-chart>
+              <my-chart header = 'Architecture'></my-chart>
+              <my-chart header = 'Legacy Dependency'></my-chart>
+              <my-chart header = 'Cloud Platforms'></my-chart>
+              <my-chart header = 'New Business Models'></my-chart>
+            </div>
+
+          </section>
+          
+     
+        
+        <!-- popup messages-->
+        <div class = 'pop pop_1'>
+          Lets see what do you think about the state of your company and your competitors are in each of these main categories. Use the sliders to adjust the values .
+          <div class = 'light-sys'>
+            <div class = 'sgs'>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div>
+        <div class = 'pop pop_2'>
+          This is how you see the current situation between you and your direct competitors purely from the subjective point of view.
+          <div class = 'light-sys'>
+            <div class = 'sgs'>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div>
+        
+      <!-- section 2-->
+      <section class = 'sec_2'>
+        <h1 class="datavisual">Data Visualization</h1>
+       <div class = 'group-flex'>
+
+        <data-view header = 'PURPOSE' row = 2>
+          <div slot = 'sub_1'>
+            <data-row sub-header = 'Customer' data-flow = 'customer'></data-row>
+          </div>
+    
+          <div slot = 'sub_1'>
+            <data-row sub-header = 'Business Value' data-flow = 'business'></data-row>
+          </div>
+        </data-view>
+        
+         
+         <data-view header = 'FUTURE MODEL' row = 2>
+          <div slot = 'sub_1'>
+            <data-row sub-header = 'Operating Model' data-flow = 'operating'></data-row>
+          </div>
+    
+          <div slot = 'sub_1'>
+            <data-row sub-header = 'Work-force & Skills' data-flow = 'workforce'></data-row>
+          </div>
+         </data-view>
+    
+         <data-view header = 'FOUNDATION' row = 3>
+          <div slot = 'sub_1' class = 'fh'>
+            <data-row sub-header = 'Operations & Delivery Excellence​' data-flow = 'exellence'></data-row>
+          </div>
+          
+          <div slot = 'sub_1' class = 'fh'>
+            <data-row sub-header = 'Technology Capabilities​' data-flow = 'technology'></data-row>
+          </div>
+    
+          <div slot = 'sub_1' class = 'fh'>
+            <data-row sub-header = 'Security & Compliance​' data-flow = 'security'></data-row>
+          </div>
+         </data-view>
+    
+         <data-view header = 'INNOVATION' row = 2>
+           <div slot = 'sub_1'>
+            <data-row sub-header = 'Innovation​' data-flow = 'innovation'></data-row>
+          </div>
+    
+          <div slot = 'sub_1'>
+            <data-row sub-header = 'Data & Analytics' data-flow = 'analytics'></data-row>
+          </div>
+         </data-view>
+       </div>
+
+
+       <!--Graphs-->
+      
+      <div class = 'graph-container'>
+
+        <div class = 'graph graph-customer'>
+          <div class = 'graph-view'></div>
+          <div class = 'graph-app'>
+            <div class = 'main-control'>
+              <div class = 'back'></div>
+              <div class = 'control-line'>
+                <div class = 'control-point'></div>
+              </div>
+            </div>
+          </div>
+          <div class = 'graph-title'></div>
+        </div>
+        
+      </div>
+    
+      </section>
+
+      
+
+       
+
+
+
+<!--   Commenting out extra pop ups -->
+<!--         <div class = 'pop pop_3'>
+          For people whose jobs are at risk, the transition to software development makes ostensible sense: it’s a job that’s highly unlikely to become automated, and affords a good income
+          <div class = 'light-sys'>
+            <div class = 'sgs'>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div>
+        <div class = 'pop pop_4'>
+          By surveying workers on the importance of various skills and knowledge areas to their job, the Department of Labor provides a way to understand the components of each job. As expected, it is crucial that software developers excel at programming — a skill that’s largely irrelevant to truckers.
+          <div class = 'light-sys'>
+            <div class = 'sgs'>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>x
+        </div>
+        <div class = 'pop pop_5'>
+          Here are some of the skills by which the Department of Labor describes all jobs. Unsurprisingly, truckers and developers have relatively few similarities in terms of the competencies necessary for their respective jobs.
+          <div class = 'light-sys'>
+            <div class = 'sgs'>
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+        </div> -->
+       <!--
+        <template id = 'templ'>
+          <div id = 'skills-container-chart'>
+            <span id = 'impo'>Importance of skill: programming</span>
+            <div id = 'track-container'>
+              <div id = 'num-0'>0%</div>
+              <div id = 'track-line'>
+                <div id = 'tracko'>
+                  <div class = 'truck'>
+                    <span class = 'truck-w'>Truckers</span>
+                    <i class="fas fa-truck fa-2x"></i>
+                  </div>
+                  <div class = 'dev'>
+                   <span class = 'truck-w'>Developers</span>
+                   <i class="fas fa-desktop fa-2x"></i>
+                  </div>
+                </div>
+              </div>
+              <div id = 'num-100'>100%</div>
+            </div>
+          </div>
+        </template>
+      -->
+
+
+          <!--Exporting Data Modal-->
+        <div id = 'data-export-container'>
+          <div id = 'top'>
+            <div id = 'file-name'>File name:</div>
+            <div id = 'name-input'>
+              <input id = 'file-name-input' type = 'text' placeholder = 'e.g myFlie'>
+            </div>
+            <div id = 'file-extension'>
+              <select id = 'file-select'>
+                <option value = 'csv'>.csv</option>
+                <option value = 'xls'>.xls</option>
+                <option value = 'xlsx'>.xlsx</option>
+                <option value = 'xlsb'>.xlsbx</option>
+              </select>
+            </div>
+          </div>
+          <div id = 'middle'>
+            <!--<img src = 'https://i.imgur.com/FmYeL3j.gif' id = 'gif'>-->
+            This app will be only visible on demand. right now i experiment it
+          </div>
+          <div id = 'bottom'>
+            <button id = 'file-btn-export'>Export</button>
+            <button id = 'file-btn-cancel'>Cancel</button>
+          </div>
+        </div>
+      </body>
+
+
+
+      
+</html>
